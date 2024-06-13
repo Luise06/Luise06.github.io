@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head lang="de">
+        <title>Portfolio Luise Knoll</title>
+        <meta charset="UTF-8"/>
+
+        <link rel="stylesheet" href="styleMyPage.css">
+        <link rel="stylesheet" href="styleGalerie.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+        
+    </head>
+    <body>
+        <header>
+            <div class="Ueberschrift"></div>
+            <a href="/"><h1>Portfolio <span>Luise Knoll</span></h1></a>
+        </header>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="kontakt.html">Kontakte</a></li>
+                <li><div class="vertical"></div></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><div class="vertical"></div></li>
+                <li><a href="videoGalerie.html">Videogalerie</a></li>
+                <li><div class="vertical"></div></li>
+                <li><a href="\index.html#ueberMichScroll">Über Mich</a></li>
+                <li><div class="vertical"></div></li>
+                <li><a href="\">Start</a></li>
+                <li><div class="vertical"></div></li>
+            </ul>
+        </nav>
+
+       
+        <main>
+                <div class="startbild">
+                    <div class="slideshow">
+                        <img class="mySlides" src="Fotos/Architektur_LuiseKnoll.jpg" style="width:100%">
+                        <img class="mySlides" src="Fotos/Blume1_LuiseKnoll.jpg" style="width:100%">
+                        <img class="mySlides" src="Fotos/Blume_LuiseKnoll.jpg" style="width:100%">
+                        <img class="mySlides" src="Fotos/Tierfotografie1_LuiseKnoll.jpg" style="width:100%">
+                        <img class="mySlides" src="Fotos/Tierfotografie2_LuiseKnoll.jpg" style="width:100%">
+                        <img class="mySlides" src="Fotos/Tierfotografie_LuiseKnoll.jpg" style="width:100%">
+                      </div>
+                    <div>
+    
+                    </div>
+                </div>
+                    
+            <section>
+                <a name="ueberMichScroll"></a>
+                <div class="ueberMich">
+                        <div class="container">
+                            <div class="heading">
+                                <h3>Über <span>Mich:</span></h3>
+                            </div>
+                        </div>
+                    <p>Hallo,  mein Name ist Luise Knoll und ich bin 17 Jahre alt. Derzeit besuche ich die vierte Klasse der Abteilung
+                        Multimedia an der HTBLuVA Salzburg.
+                        Aufgrund meiner Ausbildung habe ich Erfahrung in Fotografie, Videografie, Grafikdesign,
+                        Spieleprogrammierung, Audiovertonung sowie 3D - Animierung und Modellierung.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi mollitia corporis rerum ad eius ab vero voluptatibus quod dicta, laudantium placeat et velit iste, nemo nam iure. Laborum, ea?</p>
+                    <br>
+                    <h3>Schwerpunkte</h3>
+                    <ul>
+                        <li>Programieren</li>
+                        <li>Fotografie</li>
+                        <li>Videografie</li>
+                        <li>Grafikdesign</li>
+                        <li>3D Modellierung und Animierung</li>
+                        <li>Audioaufnahme</li>
+                    </ul>
+            
+                <a name="fotografie"></a>
+            
+            </div>
+            </section>  
+            
+        </main>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+            </script>
+        <footer>
+            <p class="impressum">Datenschutz Impressum ...</p>
+        </footer>
+    </body>
+</html>

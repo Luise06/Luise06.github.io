@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fotogalerie Luise Knoll</title>
+        <link rel="stylesheet" href="styleMyPage.css">
+        <link rel="stylesheet" href="styleGalerie.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="Ueberschrift"></div>
+            <a href="/"><h1>Portfolio <span>Luise Knoll</span></h1></a>
+        </header>
+        <nav class = "navbar">
+            <div class="menuDesktop">
+                <ul>
+                    <li><a href="kontakt.html">Kontakte</a></li>
+                    <li><div class="vertical"></div></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><div class="vertical"></div></li>
+                    <li><a href="videoGalerie.html">Videogalerie</a></li>
+                    <li><div class="vertical"></div></li>
+                    <li><a href="\index.html#ueberMichScroll">Über Mich</a></li>
+                    <li><div class="vertical"></div></li>
+                    <li><a href="\">Start</a></li>
+                    <li><div class="vertical"></div></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <main>
+           <section>
+            <div class="container">
+                <div class="heading">
+                    <h3>Foto <span>Galerie</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img class="Image" src="Fotos/Architektur_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/Blume1_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/Blume_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                    </div>
+                    <div class="dream">
+                        <img src="Fotos/Tierfotografie_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/Tierfotografie1_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/Tierfotografie2_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                    </div>
+                    <div class="dream">
+                        <img src="Fotos/Lichter_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/Mondlampe_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                        <img src="Fotos/UVLichter_LuiseKnoll.jpg" onclick="FullView(this.src)"/>
+                    </div> 
+                </div>
+                    
+                </div>    
+            </div>
+           </section>
+
+        </main>
+        <div id="FullImageView">
+            <div id="FullImageContainer">
+                <img id ="FullImage"/>
+                <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+            </div>
+        </div>
+        <div id="FullImageView">
+            <div id="FullImageContainer">
+                <img id ="FullImage"/>
+                <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function FullView(ImgLink){
+                document.getElementById("FullImage").src = ImgLink;
+                document.getElementById("FullImageView").style.display = "block";
+
+            }
+            function CloseFullView()
+            {
+                document.getElementById("FullImageView").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
